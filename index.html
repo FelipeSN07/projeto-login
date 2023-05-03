@@ -17,22 +17,19 @@
             </div>
             <div id="formulario">
                 <h1>Login</h1>
-                <p>Seja bem-bindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                <form action="login.php" method="post">
-                    <p class="form">
-                        <label for="iemail"><span class="material-icons">person</span><label>
-                        <input type="email" name="email" id="iemail" required placeholder="seu e-mail">
-                    </p>
-
-                    <p class="form">
-                        <label for="isenha"><span class="material-icons">vpn_key</span></label>
-                        <input type="password" name="senha" id="isenha" required placeholder="sua senha">
-                    </p>
-
-                    <p id="entrar">
-                        <input type="submit" value="Entrar">
-                    </p>
-                    <p id="esq">Esqueci a senha <span class="material-icons">email</span></p>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <label for="ilog"><span class="material-icons">person</span><label>
+                        <input type="email" name="log" id="ilog" required maxlength="30" placeholder="seu e-mail" autocomplete="email">    
+                    </div>
+                    <div class="campo">
+                        <label for="isen"><span class="material-icons">vpn_key</span></label>
+                        <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" placeholder="sua senha" autocomplete="current-password">
+                    </div>
+                    <input type="submit" value="Entrar"> <br>
+                    <a href="esqueci.html">Esqueci a senha</a>
+                    <span class="material-icons">mail</span>
                 </form>
 
             </div>
